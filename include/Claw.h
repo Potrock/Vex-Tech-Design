@@ -3,9 +3,10 @@
 #include "API.h"
 
 int getClawPot();
-bool getClosePot();
-bool getOpenPot(int x);
 void setClaw();
 void clawLogic();
+bool openClaw;
+bool closeClawStar;
+bool closeStarCube;
 
 #endif

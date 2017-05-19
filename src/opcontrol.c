@@ -41,6 +41,7 @@ void operatorControl() {
 		kajDrive();
 		liftLogic();
 		clawLogic();
+		liftClawLogic();
 		delay(20);
 	}
 	printf("%s\n", "TELEOP OVER");
