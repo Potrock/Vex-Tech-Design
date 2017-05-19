@@ -13,6 +13,8 @@
 #include "main.h"
 #include "DriveTrain.h"
 #include "ElectricalConstants.h"
+#include "Lift.h"
+#include "Claw.h"
 
 /*
  * Runs the user operator control code. This function will be started in its own task with the
@@ -37,5 +39,9 @@ void operatorControl() {
 
 	while(true) {
 		kajDrive();
+		liftLogic();
+		clawLogic();
+		delay(20);
 	}
+	printf("%s\n", "TELEOP OVER");
 }
